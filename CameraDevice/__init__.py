@@ -12,4 +12,4 @@
 #
 #os.environ['PYTHONPATH']=pythonpath_org
 
-from IPCam import IPcam 
+#from IPCam import IPcam 
