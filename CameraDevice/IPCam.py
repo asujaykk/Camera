@@ -86,6 +86,10 @@ class IPCam():
         nofocus = '/nofocus'
         camera.http.request('GET', self.url + nofocus)
         
+    def set_focus(self,value):
+        focus_cam = '/settings/focus_distance?set='
+        IPCam.http.request('GET', self.url + focus_cam + str(value))
+    
     def switch_to_front_cam(self):
         fron_cam = '/settings/ffc?set=on'
         camera.http.request('GET', self.url + fron_cam)
